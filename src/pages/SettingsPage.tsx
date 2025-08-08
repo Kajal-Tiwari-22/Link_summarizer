@@ -7,7 +7,7 @@ export function SettingsPage() {
 
   // Set the provided API key when component mounts
   useEffect(() => {
-    const apiKey = 'AIzaSyBl49B8ZDruCSEvOg8R2FLrUeH-Z9FwfcY';
+    const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
     setApiKey(apiKey);
   }, [setApiKey]);
 
